@@ -47,4 +47,9 @@ class Truck extends Vehicule
              $this->capacity = $capacity;
            }
     }
+
+    public function changeWheel()
+    {
+        
+    }
 }

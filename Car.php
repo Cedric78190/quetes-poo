@@ -1,6 +1,7 @@
 <?php
 
-class Car extends Vehicule{
+class Car extends Vehicule
+{
 
     public const ALLOWED_ENERGIES = [
         'essence',
@@ -10,6 +11,8 @@ class Car extends Vehicule{
     private string $energy;
 
     private int $energyLevel;
+
+    private bool $hasParkBrake;
 
     public function __construct(string $color, int $nbSeats, string $energy)
     {
@@ -38,5 +41,15 @@ class Car extends Vehicule{
     public function setEnergyLevel(int $energyLevel): void
     {
         $this->energyLevel = $energyLevel;
+    }
+
+    public function setParkBrake(bool $hasParkBrake): void
+    {
+        $this->hasParkBrake = $hasParkBrake;
+    }
+
+    public function changeWheel()
+    {
+        
     }
 }

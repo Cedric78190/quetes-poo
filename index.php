@@ -23,4 +23,6 @@ $truck->setFilling(30);
 var_dump($truck);
 echo $truck->brake(); ?> <br>
 <?php
-echo $truck->inFilling(); 
+echo $truck->inFilling();
+
+// $scooter = new Vehicule('brown', 6);

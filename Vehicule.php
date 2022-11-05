@@ -2,7 +2,7 @@
 
 // Vehicle.php
 
-class Vehicule
+abstract class Vehicule
 {
  
     protected string $color;
@@ -78,4 +78,6 @@ class Vehicule
     {
         $this->nbWheels = $nbWheels;
     }
+
+    abstract public function changeWheel();
 }
